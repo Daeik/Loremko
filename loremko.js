@@ -19,7 +19,7 @@
 	};
 
 	var area = {
-		do: [
+		state: [
 			{ name: "서울", phonePrefix: "02" },
 			{ name: "부산", phonePrefix: "051" },
 			{ name: "대구", phonePrefix: "053" },
@@ -84,7 +84,7 @@
 			].join("");
 		},
 		city: function() {
-			return area.do[getRandomInt(0, area.do.length - 1)];
+			return area.state[getRandomInt(0, area.state.length - 1)];
 		},
 		phone: function() {
 			return [
